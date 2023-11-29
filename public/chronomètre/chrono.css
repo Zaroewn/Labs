@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  }
+ 
+  #wrapper {
+    padding: 100px;
+    border-radius: 30px;
+    background-color: white;
+  }
+ 
+  #chrono {
+    text-align: center;
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+ 
+  button {
+    font-size: 25px;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+ 
+  button:not(:last-child) /*tout les boutons, sauf le dernier*/ {
+    margin-right: 15px;
+  }
+ 
+  button:nth-child(1) {
+    background-color: #3a6eff;
+    color: white;
+    box-shadow: 0 4px #1453ff;
+  }
+
+
+  button:nth-child(1):active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #1453ff;
+  }
+
+
+  button:nth-child(2) {
+    background-color: #cf2525;
+    color: white;
+    box-shadow: 0 4px #8f1818;
+  }
+
+
+  button:nth-child(2):active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #8f1818;
+  }
+ 
+  button:last-child {
+    background-color: #45c534;
+    color: white;
+    box-shadow: 0 4px #389e2a;
+  }
+
+
+  button:last-child:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px #389e2a;
+  }
