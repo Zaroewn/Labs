@@ -64,7 +64,7 @@ function ajoutertache() {
             //création div cancel checkbox
                 let warning = document.createElement("div");
 
-            // importattion d'une class CSS à la variable warning
+            // importation d'une class CSS à la variable warning
                 warning.classList.add("warning");
 
             //création du bouton Ok

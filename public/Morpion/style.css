@@ -1,0 +1,42 @@
+:root {
+    --primary: #ff6565;
+    --shadow: 0 3px 5px rgba(0, 0, 0, ,.3)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%)
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    padding: 0 20px;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 70%, var(--primary) 70%, var(--primary) 90%, transparent 90%);
+    text-shadow: var(--shadow);
+}
+
+/* CLASS */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+}
+
+.case {
+    border: 1px solid black;
+    cursor: pointer;
+}

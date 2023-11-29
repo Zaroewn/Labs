@@ -73,6 +73,11 @@ h2{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.addbutton:active{
+    box-shadow: 0 1px #a8a8a8;
+    transform: translateY(2px);
+}
+
 .list{
     display: flex;
     flex-direction: column;

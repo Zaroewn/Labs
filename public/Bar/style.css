@@ -16,13 +16,11 @@ body{
     gap: 10px;
 }
 
-.leftcontainer{
-    width: 400px;
-}
-
 .itemcontainer{
     border: 2px solid black;
     border-radius: 1rem;
+    padding:0.6rem;
+    text-align: center;
     width: 300px;
     height: 500px;
     overflow: scroll;
@@ -137,6 +135,7 @@ body{
 
 .items{
     border: 2px solid black;
+    border-radius: 0.6rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

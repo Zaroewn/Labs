@@ -20,7 +20,7 @@ let calculGainTotal = 0;
 
 okbutton.addEventListener("click", () => {
 
-    if(nomproduit.value ==="" || valeurprix.value ==="" || qte.value ==="") {
+    if(nomproduit.value ==="" || valeurprix.value ==="") {
         alert("Veuillez rentrer des valeurs valides");
     }
 
@@ -28,7 +28,6 @@ okbutton.addEventListener("click", () => {
 
     let saisieproduit = nomproduit.value;
     let saisieprix = valeurprix.value;
-    let saisiequantite = qte.value;
 
     //création div principale
     let itemrow = document.createElement("div");
@@ -42,10 +41,6 @@ okbutton.addEventListener("click", () => {
     let divPrix = document.createElement("div");
     divPrix.textContent = valeurprix.value;
 
-    //creation div qtes
-    let divQte = document.createElement("div");
-    divQte.textContent = qte.value;
-
     //création bouton supprimer
     let supress = document.createElement("img");
     supress.src ="../pictures/trash-bin.png";
@@ -53,14 +48,12 @@ okbutton.addEventListener("click", () => {
 
     itemrow.appendChild(divText);
     itemrow.appendChild(divPrix);
-    itemrow.appendChild(divQte);
     itemrow.appendChild(supress);
 
     itemlist.appendChild(itemrow);
 
     nomproduit.value ="";
     valeurprix.value="";
-    qte.value = "";
 
     //création écouteur événement suprrimer
     supress.addEventListener("click", (e) => {
@@ -93,12 +86,8 @@ okbutton.addEventListener("click", () => {
         let validPrix = document.createElement("div");
         validPrix.textContent = divPrix.textContent;
 
-        //création div Quantités
-        let validQte = document.createElement("div");
-        validQte.textContent = divQte.textContent;
-
         // calcul grand total
-        calculGainTotal += (parseFloat(validPrix.textContent) * parseFloat(validQte.textContent));
+        calculGainTotal += parseFloat(validPrix.textContent);
 
         //création bouton supprimer
         let validSupress = document.createElement("img");
@@ -106,12 +95,11 @@ okbutton.addEventListener("click", () => {
         validSupress.classList.add("trash");
 
         //création div total
-        grandTotalContainer.setAttribute("style", "margin: 10px");
+        grandTotalContainer.setAttribute("style", "margin: 10px", "background-color: red");
         grandTotalContainer.textContent = "Total : " + calculGainTotal.toString();
 
         validrow.appendChild(validText);
         validrow.appendChild(validPrix);
-        validrow.appendChild(validQte);
         validrow.appendChild(validSupress);
 
         validlist.appendChild(validrow);
@@ -119,8 +107,7 @@ okbutton.addEventListener("click", () => {
         //création écouteur événement suprrimer
     validSupress.addEventListener("click", () => {
 
-        calculGainTotal -= (parseFloat(validSupress.parentElement.childNodes[1].innerHTML) * 
-        parseFloat(validSupress.parentElement.childNodes[2].innerHTML));
+        calculGainTotal -= parseFloat(validSupress.parentElement.childNodes[1].innerHTML);
         grandTotalContainer.textContent = "Total : " + calculGainTotal;
         validrow.remove();
 
