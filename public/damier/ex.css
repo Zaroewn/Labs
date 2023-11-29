@@ -1,0 +1,27 @@
+.grille{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.blackBlock{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.green{
+    background-color: green;
+}
+
+.circle{
+    border: 0px solid black;
+    border-radius: 100%;
+    background-color: yellow;
+}

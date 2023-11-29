@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="script.js" defer></script>
+        <title>Caisse</title>
+    </head>
+    <body>
+        <div class="gridcontainer">
+            <div class="leftcontainer">
+                <div class="openclosecontainer">
+                    <div class="imgs"></div>
+                    <div class="checkbox">
+                        <div class="closed" id="closed">O</div>
+                        <div class="open" id="open">O</div>
+                    </div>
+                </div>
+                <div class="validcontainer" id="validcontainer">
+                    <div class="inputcontainer">
+                        <input type="text" placeholder="Produit" class="inputtext" id="produit">
+                        <input type="number" placeholder="Prix" class="inputnumber" id="prix">
+                        <input type="number" placeholder="Qtés" class="inputnumber" id="quantite">
+                        <div class="gobutton" id="okbutton">Ok</div>
+                    </div>
+                    <div class="validitems" id="validitems"></div>
+                    <div class="grandtotal" id="grandtotal"></div>
+                    <div class="validerbutton" id="validerbutton">Valider</div>
+                </div>
+            </div>
+                <div class="itemcontainer" id="itemcontainer"></div>
+        </div>
+    </body>
+</html>

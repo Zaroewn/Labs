@@ -1,0 +1,152 @@
+/*HTML CSS*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.leftcontainer{
+    width: 400px;
+}
+
+.itemcontainer{
+    border: 2px solid black;
+    border-radius: 1rem;
+    width: 300px;
+    height: 500px;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.openclosecontainer{
+    border: 2px solid black;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.6rem;
+}
+
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid blue;
+    border-radius: 1rem;
+    justify-content: space-around;
+}
+
+.open{
+    border: 3px solid black;
+    border-radius: 1rem;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.closed{
+    border: 3px solid black;
+    border-radius: 1rem;
+    height: 50px;
+    width: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.validcontainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    border: 2px solid black;
+    border-radius: 1rem;
+}
+
+.inputcontainer{
+    border: 2px solid black;
+    border-radius: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem;
+    margin: 20px;
+}
+
+.inputtext{
+    width: 100px;
+}
+
+.inputnumber{
+    width: 50px;
+}
+
+.gobutton{
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.validitems{
+    min-height: 20px;
+    border: 2px solid black;
+    border-radius: 1rem;
+    background: green;
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.validerbutton{
+    border: 2px solid black;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.6rem;
+
+}
+
+/*JavaScript CSS*/
+
+.items{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    padding: 0.6rem;
+}
+
+.trash{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}

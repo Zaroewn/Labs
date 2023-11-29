@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Budget's calculator</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="maincontainer">
+
+        <div class="grid" id="grid">
+    
+            <div class="inputleft">
+                <input type="text" id="textleft" placeholder="Enter text">
+                <input type="text" id="valueleft" placeholder="Enter value">
+                <div class="addbutton" id="addbuttonleft">ADD</div>
+            </div>
+
+            <div class="inputright">
+                <input type="text" id="textright" placeholder="Enter text">
+                <input type="text" id="valueright" placeholder="Enter value">
+                <div class="addbutton" id="addbuttonright">ADD</div>
+            </div>
+
+            <div class="list" id="listleft">
+                <h2>GAINS</h2>
+            </div>
+
+            <div class="list" id="listright">
+                <h2>SPENDING</h2>
+            </div>
+
+            <div class="subtotal1">TOTAL GAINS :
+                <div id="gaintotal">
+                    
+                </div>
+            </div>
+
+            <div class="subtotal">TOTAL SPENDING :
+                <div id="spendingtotal">
+
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="grandtotal">BIG TOTAL :
+            <div id="grandtotal"></div>
+        </div>
+    </div>
+</body>
+</html>

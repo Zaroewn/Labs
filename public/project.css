@@ -1,0 +1,558 @@
+/*Index CSS*/
+
+header { 
+	text-align:center;
+	background: #1D1D1D;
+	color: white;
+	padding-bottom: 30px;
+ }
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #f4f7f6;
+	margin: 0;
+}
+
+h1{
+    font-family: 'Caveat', sans-serif;
+    margin-top: 0;
+ 	padding-top: 30px;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    width: 400px;
+    margin: auto;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+    cursor: pointer;
+}
+
+ul {
+	padding: 0;
+	display: inline;
+
+}
+
+li {
+	list-style-type: none;
+	display: inline;
+	margin: 10px;
+}
+
+li:hover {
+	font-weight: bold;
+    text-decoration: underline;
+	}
+
+nav {
+	text-align: center;
+	background: white;
+	box-shadow: 0px 3px 1px -1px rgba(0, 0, 0, 0.5);
+	font-size: 1.1em;
+	padding: 15px;
+}
+
+footer { 
+	background:#1D1D1D;
+	color: white;
+	text-align: center;
+	padding: 15px;
+ }
+
+*{
+    box-sizing: border-box;
+}
+
+/*Index CLASS*/
+
+.h3contact:before{
+	content: "« ";
+	color: grey;
+}
+
+.h3contact{
+ 	font-size: 1.5em;
+ 	text-transform: uppercase;
+ }
+
+.h3contact:after{
+	content: " »";
+	color: grey;
+}
+
+.separator{
+    width: 40px;
+    height: 3px;
+    margin: 15px auto;
+    display: block;
+    background: #999999;
+}
+
+.contener{
+    width: 80%;
+    margin: auto;
+}
+
+.contactcontener{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.h3contact:before{
+	content: "« ";
+	color: grey;
+}
+
+.h3contact{
+ 	font-size: 1.5em;
+ 	text-transform: uppercase;
+ }
+
+.h3contact:after{
+	content: " »";
+	color: grey;
+}
+
+.contact { 
+    border: 1px black solid;
+    border-radius:15px;
+    padding: 30px;
+    text-align: center;
+    width: 50%;
+    word-wrap: break-word;
+} 
+
+/*Index ID*/
+
+#logo {
+	margin-top: 35px;
+	width: 50px;
+}
+
+/*CV CSS*/
+
+hr{
+    width: 30%;
+    margin: 0 auto;
+    color: #282828;
+    height: 4px;
+    background-color: #282828;
+}
+
+/*CV CLASS*/
+
+.cvcontent{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 70%;
+    margin: 30px auto;
+    border: 0px solid #282828;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    overflow: hidden;
+}
+
+.h1cv{
+    font-family:'Segoe UI',sans-serif;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    font-size: 70px;
+    padding: 0;
+    text-align: center;
+}
+
+
+.h2cv{
+    font-weight: bold;
+    color: #FEC801;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 70px;
+}
+
+.h3cv{
+    font-size: 25px;
+    margin: 0px auto;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.h4cv{
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+.divdroite{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px 20px;
+    width: 60%;
+    background: white;
+}
+
+.divgauche{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #282828;
+    padding: 10px 20px;
+    color: #ffffff;
+    width: 40%;
+    text-align: center;
+}
+
+/*FORMATION*/
+
+.formationcontener{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start ;
+    justify-content: space-between;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;     
+}
+
+.formationtext{
+    width: 70%;
+    text-align: left;
+    margin-top: 7px;
+}
+
+.date{
+    text-align: center;
+    font-size: 15px;
+}
+
+/*COMPETENCES*/
+
+.hrskill{
+    margin-bottom: 40px;
+}
+
+.skillscontener{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;   
+}
+
+.h4skill{
+    margin-bottom: 0;
+    margin-right: 15px;
+    font-size: 17px;
+}
+
+/*CONTACT CV*/
+
+.hrleft{
+    background-color: white;
+    width: 150px;
+}
+
+.phone img{
+    width: 42px;
+    height: 42px;
+    margin-top: 15px;    
+}
+
+.phone p{
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.email img{
+    width: 42px;
+    height: 42px;   
+}
+
+.email p{
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.adress img{
+    width: 42px;
+    height: 42px;   
+}
+
+.adress p{
+    margin-bottom: 35px;
+    text-decoration: underline;
+}
+
+.contactp{
+    margin: 10px;
+    font-size: 20px;
+}
+
+/*LANGUES*/
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+}
+
+.lang{
+    width: 120px;
+    height: 8px;
+    background-color: #FEC801;
+    border: 0px solid #282828;
+}
+
+.lang2{
+    width: 120px;
+    height: 8px;
+    margin-bottom: 30px;
+    background: rgb(254,200,1);
+    background: linear-gradient(90deg, rgba(254,200,1,1) 60%, rgba(255,255,255,1) 60%);
+
+}
+
+/*LOISIRS*/
+
+.loisirs1{
+    display: inline-block;
+    margin: 30px 20px;
+    font-weight: bold;
+}
+
+.loisirs1 span{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.loisirs1 img{
+    width: 80px;
+    height: 80px;
+}
+
+.loisirs2{
+    display: inline-block;
+    margin: 20px 50px;
+    font-weight: bold;
+}
+.loisirs2 span{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.loisirs2 img{
+    width: 80px;
+    height: 80px;
+}
+
+/*CV ID*/
+
+
+/*Labo CSS*/
+
+/*Labo CLASS*/
+
+.projet{
+    width: 400px;
+    margin: 30px;
+    display: inline-block;
+    background: white;
+    padding-bottom: 15px;
+    border: 0px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.projet:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: 0.5s;
+}
+
+.projet img{
+    min-width: 400px;
+    height: 266px;
+}
+
+.projet span{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.projet .date-project{
+    font-size: 0.7em;
+}
+
+.picture{
+    width: 400px;
+    height: 266px;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+}
+
+/*Labo ID*/
+
+#projets{
+    text-align: center;
+}
+
+
+                                                        /*MEDIA*/
+
+@media only screen and (max-width: 1000px){
+    
+*{
+    box-sizing: border-box;
+}
+
+header h2{
+    width: 90%;
+}
+
+hr{
+    width: 80%;
+}
+
+.hrleft{
+    width: 80%;
+}
+
+.hrskill{
+    margin-bottom: 15px;
+}
+
+/*CV*/
+
+.divgauche{
+    padding: 5px;
+}
+
+.divdroite{
+    padding: 5px;
+}
+
+.cvcontent{ 
+    width: 90%;
+}
+
+.h1cv{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.h2cv{
+    font-size: 20px;
+}
+
+.h3cv{
+    font-size: 16px;
+}
+
+.h4cv{
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.h4skill{
+    font-size: 12px;
+    margin: 10px auto;
+}
+
+.formationcontener{
+    flex-direction: column;
+    align-items: center;
+    margin: 15px auto;
+}
+
+.formationtext{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.formationtext p{
+    margin-top: 10px;
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.skillscontener{
+    margin: 5px auto;
+    width: 90%;
+    justify-content: center;
+}
+
+.phone img , .email img , .adress img{
+    width: 25px;
+    height: 25px;
+}
+
+.contactp{
+    font-size: 14px;
+    word-wrap: break-word;
+}
+
+.contacttp:visited{
+    color: white;
+}
+
+.adress p{
+    margin-bottom: 20px;
+}
+
+.english, .french{
+    width: 90%;
+}
+
+.french p, .english p{
+    font-size: 14px;
+}
+.lang, .lang2{
+    width: 80%;
+}
+
+.loisirs1, .loisirs2{
+    margin: 15px auto 0 auto;
+}
+
+.loisirs1 img, .loisirs2 img{
+    width: 70px;
+    height: 70px;
+}
+
+.loisirs1 span, .loisirs2 span{
+    margin: 10px auto;
+}
+
+.contact{
+    width: 80%;
+    padding: 20px 10px;
+}
+
+
+/* LABO */
+
+.projet{
+    width: 100%;
+    margin: 15px auto;
+}
+
+.projet img{
+    width: 100%;
+    height: auto;
+    min-width: auto;
+}
+
+.projet .picture{
+    width: 100%;
+    height: auto;
+}
+
+}
