@@ -1,0 +1,100 @@
+:root {
+    --primary: #330D6A;
+    --secondary: #316F9D;
+    --shadow: 0 3px 5px rgba(0, 0, 0, ,.3)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: 50px;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 70%, var(--secondary) 70%, var(--secondary) 90%, transparent 90%);
+    padding: 0 20px;
+    color: #30cfd0;
+}
+
+/************************* ID ****************************/
+
+#conteneurP {
+    height: 50vh;
+    width: 60vw;
+    background-color: #ffefba;
+    margin: 30px;
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#citation {
+    font-size: 2.5em;
+    font-family: 'Ephesis', curve;
+    line-height: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+#citation:before {
+    content: "“ ";
+}
+
+#citation:after {
+    content: " ”";
+}
+
+#auteur {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+
+/* design du bouton */
+
+#suivante {
+    background-color: var(--primary);
+    border-radius: 30px;
+    padding: 15px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    font-size: 20px;
+    text-shadow: var(--shadow);
+    box-shadow: var(--shadow);
+    transition: all 0.2s ease;
+}
+
+#suivante:hover {
+    background-color: #316F9D;
+}
+
+
+/************************** CLASS ***************************/
+
+.separator {
+    background: #330D6A;
+    width: 150px;
+    height: 10px;
+    border-radius: 50px;
+    margin: 20px auto 50px auto;
+}
